@@ -32,7 +32,7 @@
         <ion-item *ngFor="let n of scheduled">
           <ion-label text-wrap>
             Title: {{ n.title }}
-            <!-- <p>aTrigger: {{ n.trigger | json }} </p> -->
+            <!-- <p>Trigger: {{ n.trigger | json }} </p> -->
             <p>Hour: {{ n.trigger.every.hour | json }} </p>
             <p>Minute: {{ n.trigger.every.minute | json }} </p>
           </ion-label>
