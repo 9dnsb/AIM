@@ -26,6 +26,7 @@ export class CreateNotificationPage implements OnInit {
       this.presentAlert('Error', 'You must enter a name and time');
     } else {
       const res = this.myDate.toString();
+      
       const hours = res.substring(0, 2);
       const minutes = res.substring(3, 6);
       this.repeatingDaily2(parseInt(hours), parseInt(minutes) );
@@ -35,6 +36,7 @@ export class CreateNotificationPage implements OnInit {
   }
 
   repeatingDaily2(anHour, aMinute) {
+    console.log(anHour, aMinute);
     const random = Math.floor(Math.random() * (+9999999 - +1)) + +1;
     this.localNotifications.schedule({
       id: random,
