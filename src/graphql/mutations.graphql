@@ -1,0 +1,67 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateDeck($input: CreateDeckInput!) {
+  createDeck(input: $input) {
+    id
+    name
+    cards {
+      nextToken
+    }
+  }
+}
+mutation UpdateDeck($input: UpdateDeckInput!) {
+  updateDeck(input: $input) {
+    id
+    name
+    cards {
+      nextToken
+    }
+  }
+}
+mutation DeleteDeck($input: DeleteDeckInput!) {
+  deleteDeck(input: $input) {
+    id
+    name
+    cards {
+      nextToken
+    }
+  }
+}
+mutation CreateCard($input: CreateCardInput!) {
+  createCard(input: $input) {
+    id
+    question
+    answer
+    createdAt
+    updatedAt
+    deck {
+      id
+      name
+    }
+  }
+}
+mutation UpdateCard($input: UpdateCardInput!) {
+  updateCard(input: $input) {
+    id
+    question
+    answer
+    createdAt
+    updatedAt
+    deck {
+      id
+      name
+    }
+  }
+}
+mutation DeleteCard($input: DeleteCardInput!) {
+  deleteCard(input: $input) {
+    id
+    question
+    answer
+    createdAt
+    updatedAt
+    deck {
+      id
+      name
+    }
+  }
+}

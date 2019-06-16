@@ -1,0 +1,25 @@
+<ion-header no-border>  
+    <ion-toolbar>
+        <ion-back-button></ion-back-button>
+  
+      <ion-title>
+          Create Notification
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-input [(ngModel)]="noteName" type="text" value="" placeholder="Enter notification name"></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label>{{ "Click to set notification time"}}</ion-label>
+      <ion-datetime [(ngModel)]="myDate" [pickerOptions]="customPickerOptions" displayFormat="h:mm a" ></ion-datetime>
+    </ion-item>
+    <ion-item>
+    <ion-button (click)="toggle()">Create Notification</ion-button >
+    </ion-item>
+</ion-content>
+
+
+

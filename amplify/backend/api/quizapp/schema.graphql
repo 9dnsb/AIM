@@ -1,0 +1,31 @@
+type Deck @model @auth(
+  rules: [
+    { 
+      allow: owner, 
+      ownerField: "owner", 
+      mutations: [create, update, delete], 
+      queries: [get, list]
+    },
+  ])  {  
+  id: ID!
+  name: String!
+  cards: [Card]! @connection(name: "DeckCards")
+}
+
+type Card @model @auth(
+  rules: [
+    { 
+      allow: owner, 
+      ownerField: "owner", 
+      mutations: [create, update, delete], 
+      queries: [get, list]
+    },
+  ]) {  
+  id: ID!
+  question: String!
+  answer: String
+  createdAt: String
+  updatedAt: String
+  deck: Deck! @connection(name: "DeckCards")
+}
+

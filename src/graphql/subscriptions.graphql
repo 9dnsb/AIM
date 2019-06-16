@@ -1,0 +1,67 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateDeck {
+  onCreateDeck {
+    id
+    name
+    cards {
+      nextToken
+    }
+  }
+}
+subscription OnUpdateDeck {
+  onUpdateDeck {
+    id
+    name
+    cards {
+      nextToken
+    }
+  }
+}
+subscription OnDeleteDeck {
+  onDeleteDeck {
+    id
+    name
+    cards {
+      nextToken
+    }
+  }
+}
+subscription OnCreateCard {
+  onCreateCard {
+    id
+    question
+    answer
+    createdAt
+    updatedAt
+    deck {
+      id
+      name
+    }
+  }
+}
+subscription OnUpdateCard {
+  onUpdateCard {
+    id
+    question
+    answer
+    createdAt
+    updatedAt
+    deck {
+      id
+      name
+    }
+  }
+}
+subscription OnDeleteCard {
+  onDeleteCard {
+    id
+    question
+    answer
+    createdAt
+    updatedAt
+    deck {
+      id
+      name
+    }
+  }
+}

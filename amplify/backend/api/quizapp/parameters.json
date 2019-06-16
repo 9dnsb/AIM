@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "quizapp",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authquizapp93ea8c64",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

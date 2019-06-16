@@ -1,0 +1,19 @@
+{
+    "app": {
+        "awscloudformation": {
+            "AuthRoleName": "quiz-app-app-20190529183103-authRole",
+            "UnauthRoleArn": "arn:aws:iam::728639844542:role/quiz-app-app-20190529183103-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::728639844542:role/quiz-app-app-20190529183103-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "quiz-app-app-20190529183103-deployment",
+            "UnauthRoleName": "quiz-app-app-20190529183103-unauthRole",
+            "StackName": "quiz-app-app-20190529183103",
+            "StackId": "arn:aws:cloudformation:us-east-1:728639844542:stack/quiz-app-app-20190529183103/71b0edd0-8261-11e9-8541-126c5203d2c8"
+        },
+        "categories": {
+            "auth": {
+                "quizapp93ea8c64": {}
+            }
+        }
+    }
+}

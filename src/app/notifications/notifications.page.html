@@ -1,0 +1,51 @@
+<ion-header no-border>  
+    <ion-toolbar>
+        <ion-back-button></ion-back-button>
+  
+      <ion-title>
+        Notification Settings
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content text-center>  
+    <ion-card (click)="enableNotif()">
+      <ion-card-header>
+        <ion-card-title>{{ "Enable Notifications"}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card (click)="createNotif()">
+      <ion-card-header>
+        <ion-card-title>{{ "Create New Notification"}}</ion-card-title>
+      </ion-card-header>
+      
+    </ion-card>
+
+    <ion-card (click)="viewNotif()">
+      <ion-card-header>
+        <ion-card-title>{{ "View Existing Notifications"}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-list>
+        <ion-item *ngFor="let n of scheduled">
+          <ion-label text-wrap>
+            Title: {{ n.title }}
+            <!-- <p>aTrigger: {{ n.trigger | json }} </p> -->
+            <p>Hour: {{ n.trigger.every.hour | json }} </p>
+            <p>Minute: {{ n.trigger.every.minute | json }} </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+    <ion-card (click)="delNotif()">
+      <ion-card-header>
+        <ion-card-title>{{ "Delete All Notifications"}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    
+
+
+  </ion-content>

@@ -1,0 +1,31 @@
+<ion-header no-border>  
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="delete()">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Enter Info</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="save()">
+        <ion-icon slot="icon-only" name="checkmark-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>  
+  <ion-card padding>
+    <ion-item>
+      <ion-label position="stacked">Systolic</ion-label>
+      <ion-input type="number" rows="1" placeholder="Enter Number" [(ngModel)]="card.question"></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-card padding>
+    <ion-item>
+      <ion-label position="stacked">Diastolic</ion-label>
+      <ion-input type="number" rows="1" placeholder="Enter Number" [(ngModel)]="card.answer"></ion-input>
+    </ion-item>
+  </ion-card>
+</ion-content>  

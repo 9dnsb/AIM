@@ -1,0 +1,18 @@
+<ion-header no-border>  
+  <ion-toolbar>
+    <ion-title>N-of-1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>  
+    <amplify-authenticator fill="outline"  framework="ionic"></amplify-authenticator>
+</ion-content>
+
+<ion-footer no-border *ngIf="this.authState.signedIn">  
+  <ion-toolbar text-center>
+    <ion-button  fill="outline" (click)="showDecks()">
+        Input Options
+      <ion-icon slot="end" name="albums"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>  

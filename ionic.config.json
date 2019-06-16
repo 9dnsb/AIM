@@ -1,5 +1,7 @@
 {
   "name": "quiz-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,29 @@
+<ion-header no-border>  
+  <ion-toolbar>
+    <ion-back-button></ion-back-button>
+    <ion-title>{{ deck?.name }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="showNewCard()">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>  
+    <ion-card [hidden] = "ifEmpty">
+        <ion-card-content>
+          Click + button in top right of screen to add a blood pressure reading
+        </ion-card-content>
+      </ion-card>
+  <ion-card *ngFor="let card of deck?.cards.items" (click)="showCard(card)">
+    <ion-card-content>
+      {{ "Systolic: " + card.question}}
+      <br>
+      {{"Diastolic: " + card.answer}}
+      <br>
+      {{"Last Updated: " + card.updatedAt}}
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>  
