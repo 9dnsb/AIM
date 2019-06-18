@@ -9,7 +9,7 @@
 		}
 	},
 	"auth": {
-		"quizapp93ea8c64": {
+		"quizapp311b8609": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}

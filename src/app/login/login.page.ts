@@ -25,6 +25,16 @@ export class LoginPage {
 
   authState: any;
   didLogIn = false;
+  signUpConfig = {
+    header: 'Create Account',
+    signUpFields: [
+      {label: 'Email', key: 'email', name: 'email', required: true, displayOrder: 1, type: 'string'},
+
+    {label: 'Username', key: 'username', name: 'username', required: true, displayOrder: 2, type: 'string'},
+    {label: 'Password', key: 'password', name: 'password', required: true, displayOrder: 3}
+    ],
+    hiddenDefaults: ['username', 'phone_number']
+    };
 
   constructor(
     public events: Events,

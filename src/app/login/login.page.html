@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>  
-    <amplify-authenticator fill="outline"  framework="ionic"></amplify-authenticator>
+    <amplify-authenticator [signUpConfig]="signUpConfig" fill="outline"  framework="ionic"></amplify-authenticator>
 </ion-content>
 
 <ion-footer no-border *ngIf="this.authState.signedIn">  
